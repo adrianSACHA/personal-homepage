@@ -1,8 +1,10 @@
 export const theme = {
   color: {
+    whiteLilac: "#FBFBFE",
     mercury: "#E5E5E5",
     gallery: "#EEEEEE",
-    black: "#000000",
+    // black: "#000000",
+    black: "#252525",
     silver: "#CCCCCC",
     cyan: "#1AFFFF",
     bondiBlue: "#00B3B3",

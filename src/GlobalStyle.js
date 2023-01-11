@@ -14,8 +14,11 @@ export const GlobalStyle = createGlobalStyle`
   #root {
     font-family: 'Inter', sans-serif;
     justify-content: center;
-    color: ${({theme}) => theme.color.black};
-    background-color: ${({theme}) => theme.color.mercury};
+    color: ${({ theme }) => theme.color.black};
+    background-color: ${({ theme }) => theme.color.whiteLilac};
     word-break: break-word;
+position: relative;
+
+;
   }
 `;

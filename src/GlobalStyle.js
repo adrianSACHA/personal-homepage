@@ -12,10 +12,10 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   #root {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     justify-content: center;
     color: ${({theme}) => theme.color.black};
-    background-color: ${({theme}) => theme.color.gallery};
+    background-color: ${({theme}) => theme.color.mercury};
     word-break: break-word;
   }
 `;

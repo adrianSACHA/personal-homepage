@@ -1,5 +1,6 @@
 export const theme = {
   color: {
+    mercury: "#E5E5E5",
     gallery: "#EEEEEE",
     black: "#000000",
     silver: "#CCCCCC",

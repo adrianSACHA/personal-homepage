@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-  max-width: 900px;
+  max-width: 1216px;
   margin: 10px auto;
 `;

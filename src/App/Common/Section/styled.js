@@ -34,7 +34,7 @@ export const Header = styled.h2`
   font-weight: 900;
   font-size: 30px;
   line-height: 36px;
-  text-align: center;
+  text-align: left;
   letter-spacing: 0.05em;
 `;
 

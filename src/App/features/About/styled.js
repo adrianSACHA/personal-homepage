@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   align-items: center;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     align-items: stretch;
   }
 `;
@@ -35,7 +35,7 @@ export const Content = styled.div`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     /* position: absolute; */
-    max-width: 275px;
+    width: 100%;
     min-height: 96px;
     /* left: calc(50% - 275px/2 - 6.5px);
 top: 245px; */
@@ -57,7 +57,7 @@ top: 245px; */
 `;
 
 export const StyledParagraph = styled.p`
-  max-width: 43px;
+  max-width: 176px;
   min-height: 16px;
   /* top: 183px; */
   font-style: normal;
@@ -69,10 +69,10 @@ export const StyledParagraph = styled.p`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     /* position: absolute; */
-    width: 43px;
+    width:100%;
     height: 16px;
-    left: calc(50% - 43px / 2 - 122.5px);
-    top: 178px;
+    /* left: calc(50% - 43px / 2 - 122.5px); */
+    /* top: 178px; */
 
     /* Caption */
 
@@ -103,7 +103,7 @@ export const Memo = styled.p`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     /* position: absolute; */
-    max-width: 275px;
+    max-width: 100%;
     min-height: 96px;
     /* left: calc(50% - 275px / 2 - 6.5px); */
     top: 245px;
@@ -138,7 +138,7 @@ export const HeaderMemo = styled.p`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     /* position: absolute; */
-    max-width: 240px;
+    max-width: 340px;
     min-height: 27px;
     /* left: calc(50% - 240px / 2 - 24px); */
     /* top: 202px; */
@@ -160,6 +160,7 @@ export const HeaderMemo = styled.p`
 `;
 
 export const StyledButton = styled.button`
+
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -175,6 +176,7 @@ top: 381px; */
   border: 1px solid rgba(209, 213, 218, 0.3);
   border-radius: 4px;
   cursor: pointer;
+ color: #ffffff;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     display: flex;
@@ -194,8 +196,8 @@ top: 381px; */
 
     background: #0366d6;
     border-radius: 4px;
-    max-width: 74px;
-    min-height: 22px;
+    /* max-width: 74px;
+    min-height: 22px; */
 
     /* font-family: "Inter";
     font-style: normal; */
@@ -211,7 +213,7 @@ top: 381px; */
 
     /* White */
 
-    color: #ffffff;
+    
 
     /* Inside auto layout */
 

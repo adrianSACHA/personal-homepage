@@ -1,4 +1,5 @@
 import { Content, HeaderMemo, ImageOfMe, Memo, StyledButton, StyledParagraph, Wrapper } from "./styled";
+import { ReactComponent as Message } from "./message.svg";
 
 const About = () => (
   <Wrapper>
@@ -14,7 +15,7 @@ const About = () => (
       ideas come to life, feel free to contact me.
     </Memo>
     <StyledButton>
-      &#9993; Hire Me
+      <Message /> Hire Me
     </StyledButton>
     </Content>
   </Wrapper>

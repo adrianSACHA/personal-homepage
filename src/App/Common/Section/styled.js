@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Sections = styled.section`
   background-color: ${({ theme }) => theme.color.white};
   max-width: 1216px;
-  height: 404px;
+  min-height: 304px;
   left: calc(50% - 1216px / 2 + 2px);
   top: 576px;
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),

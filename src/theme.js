@@ -17,6 +17,7 @@ export const theme = {
     redOrange: "#ff3333",
   },
   breakpoint: {
-    mobile: 767,
+    tablet: 767,
+    mobile: 768,
   },
 };

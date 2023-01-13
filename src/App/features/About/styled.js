@@ -50,15 +50,12 @@ export const StyledParagraph = styled.p`
   text-transform: uppercase;
   color: #6e7e91;
   margin: 6px 0;
-
   
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     width: 100%;
     height: 16px;
-    font-size: 12px;
   }
 `;
-
 
 export const HeaderMemo = styled.p`
   max-width: 415px;
@@ -75,7 +72,6 @@ export const HeaderMemo = styled.p`
     min-height: 27px;
     font-size: 22px;
     line-height: 27px;
-    letter-spacing: 0.05em;
   }
 `;
 
@@ -92,13 +88,9 @@ export const Memo = styled.p`
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     max-width: 100%;
     min-height: 96px;
-    font-weight: 400;
     font-size: 17px;
-    line-height: 140%;
   }
 `;
-
-
 
 export const StyledButton = styled.button`
   display: flex;
@@ -123,17 +115,13 @@ export const StyledButton = styled.button`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 12px 16px;
     gap: 12px;
     max-width: 138px;
     min-height: 46px;
     background: #0366d6;
     border-radius: 4px;
-    font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.05em;
     flex: none;

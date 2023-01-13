@@ -16,7 +16,6 @@ export const List = styled.header`
   border-bottom: 1px solid ${({ theme }) => theme.color.whiteLilac};
   padding: 5px 5px 5px 20px;
   justify-content: space-between;
- 
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     grid-template-columns: 1fr;
@@ -34,6 +33,11 @@ export const Header = styled.h2`
   line-height: 36px;
   text-align: left;
   letter-spacing: 0.05em;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 18px;
+    line-height: 22px;
+  }
 `;
 
 export const Content = styled.div`

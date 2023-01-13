@@ -9,7 +9,7 @@ import Portfolio from "./features/Portfolio";
 function App() {
   return (
     <Container>
-      <Header title="Personal HOMEPAGE! - 🚧🚧UnderConstruction 🚧🚧" content={<About />} />
+      <Header content={<About />} />
       <Section title="My Skill set includes 🛠️" body="React" />
       <Section title="What I want to learn next 🚀" body="Typescript" />
       <Portfolio />

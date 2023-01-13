@@ -13,6 +13,17 @@ export const Memo = styled.p`
   font-size: 18px;
   line-height: 140%;
   letter-spacing: 0.05em;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+
+    /* Black text */
+
+    color: #252525;
+  }
 `;
 
 export const StyledParagraph = styled.p`
@@ -26,6 +37,19 @@ export const StyledParagraph = styled.p`
   /* Text secondary */
 
   color: #6e7e91;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 130%;
+    /* identical to box height, or 16px */
+
+    text-transform: uppercase;
+
+    /* Text secondary */
+
+    color: #6e7e91;
+  }
 `;
 
 export const Link = styled.a`
@@ -41,6 +65,18 @@ export const Link = styled.a`
 
   &:hover {
     color: #0366d6;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+
+    /* Black text */
+
+    color: #252525;
   }
 `;
 
@@ -62,16 +98,30 @@ export const StyledLogo = styled.a``;
 
 export const GitHubLogo = styled(GitHub)`
   fill: #252525;
+  height: 48px;
+  width: 48px;
 
   &:hover {
     fill: #2517eb;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    width: 32px;
+    height: 32px;
   }
 `;
 
 export const LinkedInLogo = styled(LinkedIn)`
   fill: #252525;
+  height: 48px;
+  width: 48px;
 
   &:hover {
     fill: #2517eb;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    width: 32px;
+    height: 32px;
   }
 `;

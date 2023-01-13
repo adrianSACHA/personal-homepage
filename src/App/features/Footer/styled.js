@@ -53,7 +53,8 @@ export const Social = styled.div`
   padding: 0px;
   gap: 24px;
   max-width: 264px;
-  height: 48px;
+  min-height: 48px;
+  margin: 50px 0;
 `;
 
 export const StyledLogo = styled.a``;

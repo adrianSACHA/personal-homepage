@@ -29,6 +29,7 @@ export const ImageOfMe = styled.div`
 export const Content = styled.div`
   max-width: 633px;
   min-height: 247px;
+  margin: 0 0 0 66px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     width: 100%;
@@ -50,7 +51,7 @@ export const StyledParagraph = styled.p`
   text-transform: uppercase;
   color: #6e7e91;
   margin: 6px 0;
-  
+
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     width: 100%;
     height: 16px;
@@ -99,8 +100,8 @@ export const StyledButton = styled.button`
   align-items: center;
   padding: 12px 16px;
   gap: 16px;
-  max-width: 154px;
-  min-height: 49px;
+  width: 154px;
+  height: 49px;
   background: #0366d6;
   border: 1px solid rgba(209, 213, 218, 0.3);
   border-radius: 4px;
@@ -110,13 +111,21 @@ export const StyledButton = styled.button`
   font-size: 20.0584px;
   line-height: 24px;
 
+  &:hover {
+    box-shadow: 2px -2px 0px #8cc2ff, -2px 2px 0px #8cc2ff, 2px 2px 0px #8cc2ff,
+      -2px -2px 0px #8cc2ff;
+  }
+  &:active {
+    box-shadow: inset 0px 2px 0px rgba(20, 70, 32, 0.2);
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 12px;
-    max-width: 138px;
+    width: 138px;
     min-height: 46px;
     background: #0366d6;
     border-radius: 4px;

@@ -1,4 +1,10 @@
-import { GitHubLogo, StyledLogo, Wrapper } from "./styled";
+import {
+  GitHubLogo,
+  StyledHeader,
+  StyledLogo,
+  StyledParagraph,
+  Wrapper,
+} from "./styled";
 
 const Portfolio = () => (
   <Wrapper>
@@ -9,9 +15,9 @@ const Portfolio = () => (
     >
       <GitHubLogo />
     </StyledLogo>
-
-    <h2>Portfolio</h2>
-    <p>My recent projects</p>
+    <StyledHeader>Portfolio</StyledHeader>
+    <StyledParagraph>My recent projects</StyledParagraph>
+    <div>Workin on a hook to show my repositories</div>
   </Wrapper>
 );
 export default Portfolio;

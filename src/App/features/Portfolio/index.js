@@ -17,7 +17,9 @@ const Portfolio = () => (
     </StyledLogo>
     <StyledHeader>Portfolio</StyledHeader>
     <StyledParagraph>My recent projects</StyledParagraph>
-    <div>Workin on a hook to show my repositories</div>
+    <div>Will be soon</div>
+
   </Wrapper>
 );
 export default Portfolio;
+

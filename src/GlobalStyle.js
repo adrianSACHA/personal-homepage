@@ -17,7 +17,6 @@ export const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.color.black};
     background-color: ${({ theme }) => theme.color.whiteLilac};
     word-break: break-word;
-
-;
+    transition: 0.3ms;
   }
 `;

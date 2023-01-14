@@ -91,6 +91,7 @@ export const Memo = styled.p`
     max-width: 100%;
     min-height: 96px;
     font-size: 17px;
+margin: 2px 0;
   }
 `;
 

@@ -39,6 +39,7 @@ export const Content = styled.div`
     line-height: 140%;
     letter-spacing: 0.05em;
     color: #6e7e91;
+    margin: 0 0 0 6px;
   }
 `;
 

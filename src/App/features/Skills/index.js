@@ -1,5 +1,6 @@
-import {skills} from './skillsKnown.js';
-import { nanoid } from '@reduxjs/toolkit';
+import { skills } from "./skillsKnow.js";
+import { nanoid } from "@reduxjs/toolkit";
+import List from "../../common/List/index.js";
 
 const Skills = () => {
   const skillsWithIndex = skills.map((skill) => ({
@@ -7,11 +8,7 @@ const Skills = () => {
     id: nanoid(),
   }));
 
-return (
-  <div>
-    {skillsWithIndex}
-  </div>
-);
+  return <List listContent={skillsWithIndex} />;
 };
 
 export default Skills;

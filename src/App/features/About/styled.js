@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   grid-template-columns: auto 1fr;
   align-items: center;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     grid-template-columns: auto;
     align-items: stretch;
   }
@@ -20,7 +20,7 @@ export const ImageOfMe = styled.div`
   background-size: contain;
   border-radius: 50%;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     width: 132.67px;
     height: 132.67px;
   }
@@ -31,7 +31,7 @@ export const Content = styled.div`
   min-height: 247px;
   margin: 0 0 0 66px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     width: 100%;
     min-height: 96px;
     font-weight: 400;
@@ -53,7 +53,7 @@ export const StyledParagraph = styled.p`
   color: #6e7e91;
   margin: 6px 0;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     width: 100%;
     height: 16px;
   }
@@ -69,7 +69,7 @@ export const HeaderMemo = styled.p`
   color: #252525;
   margin: 6px 0;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     max-width: 340px;
     min-height: 27px;
     font-size: 22px;
@@ -87,7 +87,7 @@ export const Memo = styled.p`
   color: #6e7e91;
   margin: 29px 0;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     max-width: 100%;
     min-height: 96px;
     font-size: 17px;
@@ -121,7 +121,7 @@ export const StyledButton = styled.button`
     box-shadow: inset 0px 2px 0px rgba(20, 70, 32, 0.2);
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     display: flex;
     flex-direction: row;
     justify-content: center;

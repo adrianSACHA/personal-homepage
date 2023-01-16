@@ -21,7 +21,6 @@ NA
 Building site according to a project in Figma
 
 To do:
-- Skills known and to learn JSON
 - getting repos
 - loading circle
 

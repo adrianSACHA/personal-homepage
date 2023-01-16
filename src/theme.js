@@ -3,7 +3,6 @@ export const theme = {
     whiteLilac: "#FBFBFE",
     mercury: "#E5E5E5",
     gallery: "#EEEEEE",
-    // black: "#000000",
     black: "#252525",
     silver: "#CCCCCC",
     cyan: "#1AFFFF",
@@ -17,7 +16,7 @@ export const theme = {
     redOrange: "#ff3333",
   },
   breakpoint: {
-    tablet: 767,
-    mobile: 768,
+    tablet: 768,
+    mobile: 420,
   },
 };

@@ -13,7 +13,7 @@ import { email } from "../email";
 const Footer = () => (
   <Wrapper>
     <StyledParagraph>Let's talk!</StyledParagraph>
-    <Link href={'mailto:${email}'} title={email} rel="noopener noreferrer">
+    <Link href={`mailto:${email}`} title={email} rel="noopener noreferrer">
       asachajdakiewicz@gmail.com
     </Link>
     <Memo>

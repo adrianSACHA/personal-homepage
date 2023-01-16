@@ -17,7 +17,7 @@ export const List = styled.header`
   padding: 5px 5px 5px 20px;
   justify-content: space-between;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     grid-template-columns: 1fr;
     align-items: stretch;
   }
@@ -34,12 +34,12 @@ export const Header = styled.h2`
   text-align: left;
   letter-spacing: 0.05em;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     font-size: 18px;
     line-height: 22px;
   }
 `;
 
 export const Content = styled.div`
-  padding: 0 20px 15px 20px;
+  padding: 0 20px 15px 0;
 `;

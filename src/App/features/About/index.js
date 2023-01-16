@@ -8,6 +8,7 @@ import {
   Wrapper,
 } from "./styled";
 import { ReactComponent as Message } from "./message.svg";
+import { email } from "../email";
 
 const About = () => (
   <Wrapper>
@@ -23,7 +24,7 @@ const About = () => (
         skills and creativity to create modern and aesthetic solutions for
         users.
       </Memo>
-      <StyledButton>
+      <StyledButton onClick={() => window.location.href=`mailto:${email}`} title="Hire me">
         <Message /> Hire Me
       </StyledButton>
     </Content>

@@ -1,4 +1,4 @@
-import { skills } from "./skillsKnow.js";
+import { skills } from "./skills.js";
 import { nanoid } from "@reduxjs/toolkit";
 import List from "../../common/List/index.js";
 

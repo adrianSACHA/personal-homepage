@@ -18,7 +18,7 @@ export const GitHubLogo = styled(Logo)`
   width: 40px;
   height: 40px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     width: 32px;
     height: 32px;
   }
@@ -31,7 +31,7 @@ export const StyledHeader = styled.h2`
   color: #252525;
   margin: 12.98px 0 8px 0;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     font-size: 18px;
     line-height: 22px;
     text-align: center;
@@ -46,7 +46,7 @@ export const StyledParagraph = styled.p`
   letter-spacing: 0.05em;
   color: #252525;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     font-size: 17px;
     line-height: 140%;
   }

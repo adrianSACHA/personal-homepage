@@ -1,9 +1,11 @@
+import { StyledList, StyledUlist } from "./styled";
+
 const List = ({ listContent }) => (
-  <ul>
+  <StyledUlist >
     {listContent.map(({ id, content }) => (
-      <li key={id}>{content}</li>
+      <StyledList key={id}>{content}</StyledList>
     ))}
-  </ul>
+  </StyledUlist>
 );
 
 export default List;

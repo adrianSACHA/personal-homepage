@@ -8,11 +8,12 @@ import {
   StyledParagraph,
   Wrapper,
 } from "./styled";
+import { email } from "../email";
 
 const Footer = () => (
   <Wrapper>
     <StyledParagraph>Let's talk!</StyledParagraph>
-    <Link href="mailto:asachajdakiewicz@gmail.com">
+    <Link href={'mailto:${email}'} title={email} rel="noopener noreferrer">
       asachajdakiewicz@gmail.com
     </Link>
     <Memo>

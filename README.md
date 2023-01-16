@@ -21,6 +21,7 @@ NA
 Building site according to a project in Figma
 
 To do:
+- theme switcher for dark mode
 - getting repos
 - loading circle
 

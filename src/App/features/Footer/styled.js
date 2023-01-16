@@ -14,7 +14,7 @@ export const Memo = styled.p`
   line-height: 140%;
   letter-spacing: 0.05em;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     font-size: 14px;
     line-height: 17px;
   }
@@ -40,7 +40,7 @@ export const Link = styled.a`
   &:hover {
     color: #0366d6;
   }
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     font-size: 18px;
     line-height: 22px;
   }
@@ -68,7 +68,7 @@ export const GitHubLogo = styled(GitHub)`
     fill: #2517eb;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     width: 32px;
     height: 32px;
   }
@@ -83,7 +83,7 @@ export const LinkedInLogo = styled(LinkedIn)`
     fill: #2517eb;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     width: 32px;
     height: 32px;
   }

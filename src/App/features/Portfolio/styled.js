@@ -14,7 +14,7 @@ export const StyledLogo = styled.a`
 `;
 
 export const GitHubLogo = styled(Logo)`
-  fill: #0366d6;
+  color: ${({ theme }) => theme.color.scienceBlue};
   width: 40px;
   height: 40px;
 
@@ -27,8 +27,6 @@ export const GitHubLogo = styled(Logo)`
 export const StyledHeader = styled.h2`
   font-weight: 900;
   font-size: 30px;
-  letter-spacing: 0.05em;
-  color: #252525;
   margin: 12.98px 0 8px 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
@@ -43,8 +41,6 @@ export const StyledParagraph = styled.p`
   font-size: 20px;
   line-height: 140%;
   margin: 0 0 24px 0;
-  letter-spacing: 0.05em;
-  color: #252525;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     font-size: 17px;

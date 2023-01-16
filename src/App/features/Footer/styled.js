@@ -12,7 +12,6 @@ export const Memo = styled.p`
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
-  letter-spacing: 0.05em;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     font-size: 14px;
@@ -25,7 +24,7 @@ export const StyledParagraph = styled.p`
   font-size: 12px;
   line-height: 130%;
   text-transform: uppercase;
-  color: #6e7e91;
+  color: ${({ theme }) => theme.color.slateGray};
 `;
 
 export const Link = styled.a`
@@ -33,12 +32,11 @@ export const Link = styled.a`
   font-size: 32px;
   line-height: 39px;
   cursor: pointer;
-  letter-spacing: 0.05em;
   text-decoration: none;
-  color: #252525;
+  color: ${({ theme }) => theme.color.black};
 
   &:hover {
-    color: #0366d6;
+    color: ${({ theme }) => theme.color.scienceBlue};
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     font-size: 18px;
@@ -60,12 +58,12 @@ export const Social = styled.div`
 export const StyledLogo = styled.a``;
 
 export const GitHubLogo = styled(GitHub)`
-  fill: #252525;
+  fill: ${({ theme }) => theme.color.black};
   height: 48px;
   width: 48px;
 
   &:hover {
-    fill: #2517eb;
+    fill: ${({ theme }) => theme.color.blue};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
@@ -75,12 +73,12 @@ export const GitHubLogo = styled(GitHub)`
 `;
 
 export const LinkedInLogo = styled(LinkedIn)`
-  fill: #252525;
+  fill: ${({ theme }) => theme.color.black};
   height: 48px;
   width: 48px;
 
   &:hover {
-    fill: #2517eb;
+    fill: ${({ theme }) => theme.color.blue};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {

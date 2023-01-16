@@ -32,7 +32,6 @@ export const Header = styled.h2`
   font-size: 30px;
   line-height: 36px;
   text-align: left;
-  letter-spacing: 0.05em;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     font-size: 18px;

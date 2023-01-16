@@ -37,8 +37,6 @@ export const Content = styled.div`
     font-weight: 400;
     font-size: 17px;
     line-height: 140%;
-    letter-spacing: 0.05em;
-    color: #6e7e91;
     margin: 0 0 0 6px;
   }
 `;
@@ -50,7 +48,7 @@ export const StyledParagraph = styled.p`
   font-size: 12px;
   line-height: 130%;
   text-transform: uppercase;
-  color: #6e7e91;
+  color: ${({ theme }) => theme.color.slateGray};
   margin: 6px 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
@@ -65,8 +63,6 @@ export const HeaderMemo = styled.p`
   font-weight: 900;
   font-size: 38px;
   line-height: 46px;
-  letter-spacing: 0.05em;
-  color: #252525;
   margin: 6px 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
@@ -83,15 +79,14 @@ export const Memo = styled.p`
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;
-  letter-spacing: 0.05em;
-  color: #6e7e91;
+  color: ${({ theme }) => theme.color.slateGray};
   margin: 29px 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     max-width: 100%;
     min-height: 96px;
     font-size: 17px;
-margin: 2px 0;
+    margin: 2px 0;
   }
 `;
 
@@ -134,7 +129,6 @@ export const StyledButton = styled.button`
     font-size: 18px;
     line-height: 22px;
     text-align: center;
-    letter-spacing: 0.05em;
     flex: none;
     order: 1;
     flex-grow: 0;

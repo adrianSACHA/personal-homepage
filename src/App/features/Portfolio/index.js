@@ -5,6 +5,7 @@ import {
   StyledParagraph,
   Wrapper,
 } from "./styled";
+import Tile from "./Tile";
 
 const Portfolio = () => (
   <Wrapper>
@@ -17,7 +18,7 @@ const Portfolio = () => (
     </StyledLogo>
     <StyledHeader>Portfolio</StyledHeader>
     <StyledParagraph>My recent projects</StyledParagraph>
-    <div>Will be soon</div>
+    <Tile /><Tile />
 
   </Wrapper>
 );

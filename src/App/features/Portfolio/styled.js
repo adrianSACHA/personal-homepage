@@ -6,6 +6,7 @@ export const Wrapper = styled.section`
   max-width: 1216px;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   min-height: 448px;
 `;
 

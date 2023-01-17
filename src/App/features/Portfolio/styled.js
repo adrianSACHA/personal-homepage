@@ -48,3 +48,15 @@ export const StyledParagraph = styled.p`
     line-height: 140%;
   }
 `;
+
+export const Repos = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  width: stretch;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+`;

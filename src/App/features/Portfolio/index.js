@@ -4,6 +4,7 @@ import {
   StyledLogo,
   StyledParagraph,
   Wrapper,
+  Repos
 } from "./styled";
 import Tile from "./Tile";
 
@@ -18,9 +19,12 @@ const Portfolio = () => (
     </StyledLogo>
     <StyledHeader>Portfolio</StyledHeader>
     <StyledParagraph>My recent projects</StyledParagraph>
-    <Tile /><Tile />
-
+    <Repos>
+      <Tile />
+      <Tile />
+      <Tile />
+      <Tile />
+    </Repos>
   </Wrapper>
 );
 export default Portfolio;
-

@@ -48,7 +48,7 @@ export const StyledParagraph = styled.p`
   font-size: 12px;
   line-height: 130%;
   text-transform: uppercase;
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.color.secondText};
   margin: 6px 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
@@ -79,7 +79,7 @@ export const Memo = styled.p`
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.color.secondText};
   margin: 29px 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {

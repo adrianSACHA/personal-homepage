@@ -24,7 +24,7 @@ export const StyledParagraph = styled.p`
   font-size: 12px;
   line-height: 130%;
   text-transform: uppercase;
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.color.secondText};
 `;
 
 export const Link = styled.a`
@@ -33,10 +33,10 @@ export const Link = styled.a`
   line-height: 39px;
   cursor: pointer;
   text-decoration: none;
-  color: ${({ theme }) => theme.color.black};
+  color: ${({ theme }) => theme.color.mainText};
 
   &:hover {
-    color: ${({ theme }) => theme.color.scienceBlue};
+    color: ${({ theme }) => theme.color.buttonBackground};
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     font-size: 18px;
@@ -58,7 +58,7 @@ export const Social = styled.div`
 export const StyledLogo = styled.a``;
 
 export const GitHubLogo = styled(GitHub)`
-  fill: ${({ theme }) => theme.color.black};
+  fill: ${({ theme }) => theme.color.mainText};
   height: 48px;
   width: 48px;
 
@@ -73,7 +73,7 @@ export const GitHubLogo = styled(GitHub)`
 `;
 
 export const LinkedInLogo = styled(LinkedIn)`
-  fill: ${({ theme }) => theme.color.black};
+  fill: ${({ theme }) => theme.color.mainText};
   height: 48px;
   width: 48px;
 

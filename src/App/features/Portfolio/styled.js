@@ -15,7 +15,7 @@ export const StyledLogo = styled.a`
 `;
 
 export const GitHubLogo = styled(Logo)`
-  fill: ${({ theme }) => theme.color.scienceBlue};
+  fill: ${({ theme }) => theme.color.buttonBackground};
   width: 40px;
   height: 40px;
 

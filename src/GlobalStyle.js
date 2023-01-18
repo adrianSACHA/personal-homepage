@@ -14,8 +14,8 @@ export const GlobalStyle = createGlobalStyle`
   #root {
     font-family: 'Inter', sans-serif;
     justify-content: center;
-    color: ${({ theme }) => theme.color.black};
-    background-color: ${({ theme }) => theme.color.whiteLilac};
+    color: ${({ theme }) => theme.color.mainText};
+    background-color: ${({ theme }) => theme.color.mainBackgroundColor};
     word-break: break-word;
     transition: color 0.3ms;
     letter-spacing: 0.05em;

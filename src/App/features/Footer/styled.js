@@ -63,7 +63,7 @@ export const GitHubLogo = styled(GitHub)`
   width: 48px;
 
   &:hover {
-    fill: ${({ theme }) => theme.color.blue};
+    fill: ${({ theme }) => theme.color.buttonBackground};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
@@ -78,7 +78,7 @@ export const LinkedInLogo = styled(LinkedIn)`
   width: 48px;
 
   &:hover {
-    fill: ${({ theme }) => theme.color.blue};
+    fill: ${({ theme }) => theme.color.buttonBackground};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {

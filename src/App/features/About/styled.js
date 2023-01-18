@@ -99,11 +99,11 @@ export const StyledButton = styled.button`
   gap: 16px;
   width: 154px;
   height: 49px;
-  background: #0366d6;
-  border: 1px solid rgba(209, 213, 218, 0.3);
+  background: ${({ theme }) => theme.color.buttonBackground};
+  border: 1px solid ${({ theme }) => theme.color.dividerBackground};
   border-radius: 4px;
   cursor: pointer;
-  color: #ffffff;
+  color: ${({ theme }) => theme.color.buttonText};
   font-weight: 600;
   font-size: 20.0584px;
   line-height: 24px;
@@ -124,7 +124,7 @@ export const StyledButton = styled.button`
     gap: 12px;
     width: 138px;
     min-height: 46px;
-    background: #0366d6;
+    background: ${({ theme }) => theme.color.buttonBackground};
     border-radius: 4px;
     font-size: 18px;
     line-height: 22px;

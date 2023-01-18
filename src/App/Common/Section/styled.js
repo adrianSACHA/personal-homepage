@@ -4,8 +4,8 @@ export const Wrapper = styled.section`
   background-color: ${({ theme }) => theme.color.sectionBackgroundColor};
   max-width: 1216px;
   min-height: 209px;
-  box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
-    0px 16px 58px rgba(9, 10, 51, 0.03);
+  box-shadow: 0px -2px 50px ${({ theme }) => theme.color.shadow},
+    0px 16px 58px ${({ theme }) => theme.color.shadow};
   border-radius: 4px;
 `;
 
@@ -29,7 +29,7 @@ export const Header = styled.h2`
 `;
 
 export const Divider = styled.div`
-  background-color: #d1d5da4d;
+  background-color: ${({ theme }) => theme.color.dividerBackground};
   height: 1px;
   align-items: center;
   margin: 0 32px;

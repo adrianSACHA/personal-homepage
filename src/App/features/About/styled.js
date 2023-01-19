@@ -5,10 +5,14 @@ export const Wrapper = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
+  gap: 66px;
+  margin: 80px 0 0 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     grid-template-columns: auto;
     align-items: stretch;
+    gap: 6px;
+    margin: 20px 0 0 0;
   }
 `;
 
@@ -29,7 +33,6 @@ export const ImageOfMe = styled.div`
 export const Content = styled.div`
   max-width: 633px;
   min-height: 247px;
-  margin: 0 0 0 66px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     width: 100%;
@@ -86,7 +89,7 @@ export const Memo = styled.p`
     max-width: 100%;
     min-height: 96px;
     font-size: 17px;
-    margin: 2px 0;
+    margin: 16px 0 24px 0;
   }
 `;
 
@@ -105,7 +108,7 @@ export const StyledButton = styled.button`
   cursor: pointer;
   color: ${({ theme }) => theme.color.buttonText};
   font-weight: 600;
-  font-size: 20.0584px;
+  font-size: 21px;
   line-height: 24px;
 
   &:hover {
@@ -113,7 +116,7 @@ export const StyledButton = styled.button`
       -2px -2px 0px #8cc2ff;
   }
   &:active {
-    box-shadow: inset 0px 2px 0px rgba(20, 70, 32, 0.2);
+    box-shadow: inset 0px 2px 0px #14462033;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
@@ -125,12 +128,7 @@ export const StyledButton = styled.button`
     width: 138px;
     min-height: 46px;
     background: ${({ theme }) => theme.color.buttonBackground};
-    border-radius: 4px;
     font-size: 18px;
     line-height: 22px;
-    text-align: center;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
   }
 `;

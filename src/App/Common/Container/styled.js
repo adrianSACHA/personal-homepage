@@ -6,4 +6,8 @@ export const Container = styled.main`
   display: grid;
   gap: 72px;
   justify-content: center;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+    gap: 48px;
+  }
 `;

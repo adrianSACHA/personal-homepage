@@ -15,6 +15,7 @@ export const theme = {
     buttonText: "#FFFFFF",
     shadow: "#090A3308",
     borderOnHover: "#0366D633",
+    switcherBackground: "#e5e5e5",
   },
 };
 
@@ -30,5 +31,6 @@ export const darkTheme = {
     buttonText: "#FFFFFF",
     shadow: "#090A3305",
     borderOnHover: "#0366D680",
+    switcherBackground: "#e5e5e5",
   },
 };

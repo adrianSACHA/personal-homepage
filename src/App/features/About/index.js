@@ -9,10 +9,12 @@ import {
 } from "./styled";
 import { ReactComponent as Message } from "./message.svg";
 import { email } from "../email";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 const About = () => (
   <Wrapper>
     <ImageOfMe />
+    <ThemeSwitcher />
     <Content>
       <StyledParagraph>This is</StyledParagraph>
       <HeaderMemo>Adrian Sachajdakiewicz</HeaderMemo>
@@ -24,7 +26,7 @@ const About = () => (
         skills and creativity to create modern and aesthetic solutions for
         users.
       </Memo>
-      <StyledButton onClick={() => window.location.href=`mailto:${email}`} title="Hire me">
+      <StyledButton href={`mailto:${email}`} title="Hire me">
         <Message /> Hire Me
       </StyledButton>
     </Content>

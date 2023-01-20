@@ -26,7 +26,7 @@ const About = () => (
         skills and creativity to create modern and aesthetic solutions for
         users.
       </Memo>
-      <StyledButton href={`mailto:${email}`} title="Hire me">
+      <StyledButton href={`mailto:${email}`} title="Hire me" rel="noopener noreferrer">
         <Message /> Hire Me
       </StyledButton>
     </Content>

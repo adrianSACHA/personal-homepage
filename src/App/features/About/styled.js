@@ -93,7 +93,7 @@ export const Memo = styled.p`
   }
 `;
 
-export const StyledButton = styled.button`
+export const StyledButton = styled.a`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -110,6 +110,7 @@ export const StyledButton = styled.button`
   font-weight: 600;
   font-size: 21px;
   line-height: 24px;
+  text-decoration: none;
 
   &:hover {
     box-shadow: 2px -2px 0px #8cc2ff, -2px 2px 0px #8cc2ff, 2px 2px 0px #8cc2ff,

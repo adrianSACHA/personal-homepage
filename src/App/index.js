@@ -7,8 +7,6 @@ import Portfolio from "./features/Portfolio";
 import Skills from "./features/Skills";
 import FutureSkills from "./features/FutureSkills";
 
-
-
 function App() {
   return (
     <Container>

@@ -15,14 +15,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 [Application Demo](https://adriansacha.github.io/personal-homepage/)
 
 ## PREVIEW
-NA
+N/A
 
 ## Description
 Building site according to a project in Figma
 
 To do:
 - theme switcher for dark mode
-- getting repos
+- ~~getting repos~~
 - loading circle
 
 ## Technologies used in project

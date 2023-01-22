@@ -1,23 +1,31 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const TileWrapper = styled.div`
+  min-height: 322px;
+  max-width: 1200px;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(2, auto);
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+export const TileRepo = styled.div`
   background-color: ${({ theme }) => theme.color.sectionBackgroundColor};
   border: 6px solid ${({ theme }) => theme.color.dividerBackground};
-  min-height: 322px;
-  max-width: 592px;
   border-radius: 4px;
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
     0px 16px 58px rgba(9, 10, 51, 0.03);
   text-align: left;
-  display: grid;
   max-width: 100%;
   padding: 56px;
   color: ${({ theme }) => theme.color.mainText};
 
   &:hover {
     border: 6px solid ${({ theme }) => theme.color.borderOnHover};
-    box-shadow: 0px -2px 50px #090a3305,
-      0px 16px 58px #090a3308;
+    box-shadow: 0px -2px 50px #090a3305, 0px 16px 58px #090a3308;
     border-radius: 4px;
   }
 
@@ -25,11 +33,13 @@ export const Wrapper = styled.div`
     padding: 24px;
   }
 `;
+
 export const StyledHeader = styled.h2`
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
   color: ${({ theme }) => theme.color.buttonBackground};
+  margin: 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     grid-template-columns: auto;
@@ -45,6 +55,10 @@ export const StyledParagraph = styled.p`
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     font-size: 14px;
     line-height: 17px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
   }
 `;
 
@@ -70,6 +84,26 @@ export const ListItem = styled.li`
   align-items: center;
 `;
 
+export const StyledName = styled.p`
+  width: 120px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+    width: 100px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+  }
+`;
+
 export const StyledLink = styled.a`
   font-style: normal;
   font-weight: 400;
@@ -81,5 +115,15 @@ export const StyledLink = styled.a`
 
   &:hover {
     text-decoration: underline;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
   }
 `;

@@ -1,34 +1,44 @@
 import {
-  Wrapper,
   StyledHeader,
   StyledParagraph,
   List,
   ListItem,
   StyledLink,
+  TileWrapper,
+  TileRepo,
+  StyledName,
 } from "./styled";
 
-const Tile = () => (
-  <Wrapper>
-    <StyledHeader>Title</StyledHeader>
-    <StyledParagraph>
-      {" "}
-      lorem Consequat nostrud incididunt anim qui. Ullamco nisi pariatur nisi
-      incididunt ipsum duis tempor cupidatat dolor. Magna quis aliqua deserunt
-      anim. Nostrud pariatur Lorem cupidatat enim elit excepteur et amet id
-      deserunt laborum aute. Magna ut aliqua aliqua consectetur id commodo esse
-      dolor sint non cillum. Ullamco veniam est mollit officia Lorem eiusmod non
-      labore. lorem lorem Project description
-    </StyledParagraph>
-    <List>
-      <ListItem>
-        <p>Demo:</p>
-        <StyledLink>LINK</StyledLink>
-      </ListItem>
-      <ListItem>
-        <p>Code:</p>
-        <StyledLink>LINK</StyledLink>
-      </ListItem>
-    </List>
-  </Wrapper>
+const Tile = ({ projects }) => (
+  <TileWrapper>
+    {projects.map(
+      (project) =>
+        project.homepage && (
+          <TileRepo key={project.id}>
+            <StyledHeader>
+              {project.name
+                .replace(/\b[a-z]/g, (letter) => letter.toUpperCase())
+                .replace(/-/g, " ")}
+            </StyledHeader>
+            <StyledParagraph>{project.description}</StyledParagraph>
+            <List>
+              <ListItem>
+                <StyledName>Demo:</StyledName>
+                <StyledLink target="_blank" href={project.homepage}>
+                  {project.homepage}
+                </StyledLink>
+              </ListItem>
+              <ListItem>
+                <StyledName>Code:</StyledName>
+                <StyledLink target="_blank" href={project.html_url}>
+                  {project.html_url}
+                </StyledLink>
+              </ListItem>
+            </List>
+          </TileRepo>
+        )
+    )}
+  </TileWrapper>
 );
+
 export default Tile;

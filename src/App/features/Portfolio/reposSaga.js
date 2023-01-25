@@ -4,7 +4,7 @@ import { fetchRepos, fetchReposSuccess, fetchReposError } from "./reposSlice";
 
 function* fetchReposHandler() {
   try {
-    yield delay(1500);
+    yield delay(2000);
     const data = yield call(getProjects);
     yield put(fetchReposSuccess(data));
   } catch (error) {

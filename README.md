@@ -18,12 +18,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 N/A
 
 ## Description
-Building site according to a project in Figma
+Building site according to a project in Figma.
 
 To do:
 - theme switcher for dark mode
 - ~~getting repos~~
-- loading circle
+- ~~loading circle~~
 
 ## Technologies used in project
 - `HTML`

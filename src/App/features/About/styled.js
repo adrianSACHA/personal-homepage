@@ -100,7 +100,7 @@ export const StyledButton = styled.a`
   align-items: center;
   padding: 12px 16px;
   gap: 16px;
-  width: 154px;
+  max-width: 180px;
   height: 49px;
   background: ${({ theme }) => theme.color.buttonBackground};
   border: 1px solid ${({ theme }) => theme.color.dividerBackground};

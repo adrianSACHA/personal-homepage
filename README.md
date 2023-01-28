@@ -1,4 +1,4 @@
-# Personal Homepage RESUME
+# Personal Homepage RESUME :)
 
 ![Application Image](public/personalHomepage.png)
 

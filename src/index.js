@@ -4,14 +4,14 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { GlobalStyle } from "./GlobalStyle";
 import { ThemeProvider } from "styled-components";
-import { theme } from "./theme";
+import { darkTheme, theme } from "./theme";
 import { Provider } from "react-redux";
 import store from "./App/store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={darkTheme}>
       <Provider store={store}>
         <GlobalStyle />
         <App />

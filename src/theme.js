@@ -31,6 +31,6 @@ export const darkTheme = {
     buttonText: "#FFFFFF",
     shadow: "#090A3305",
     borderOnHover: "#0366D680",
-    switcherBackground: "#e5e5e5",
+    switcherBackground: "#6e7e91",
   },
 };

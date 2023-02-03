@@ -62,5 +62,5 @@ export const Icon = styled.p`
 `;
 
 export const Sunny = styled(Sun)`
-  fill: ${({ theme }) => theme.color.sectionBackgroundColor};
+  fill: ${({ theme }) => theme.color.mainBackgroundColor};
 `;

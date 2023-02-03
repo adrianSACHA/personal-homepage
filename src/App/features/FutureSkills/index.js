@@ -1,6 +1,6 @@
 import { futureSkills } from "./futureSkills.js";
 import { nanoid } from "@reduxjs/toolkit";
-import List from "../../common/List/index.js";
+import List from "../../common/List/index";
 
 const FutureSkills = () => {
   const futureSkillsWithIndex = futureSkills.map((skill) => ({

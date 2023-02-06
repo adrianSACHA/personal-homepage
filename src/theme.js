@@ -3,7 +3,7 @@ const breakpoint = {
   mobile: 420,
 };
 
-export const theme = {
+export const lightTheme = {
   breakpoint,
   color: {
     mainText: "#252525",

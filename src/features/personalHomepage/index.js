@@ -1,13 +1,13 @@
-import { Container } from "../common/Container/styled";
-import Footer from "../App/features/Footer";
-import Header from "../common/Header";
-import Section from "../common/Section";
-import About from "../App/features/About";
-import Portfolio from "../App/features/Portfolio";
-import Skills from "../App/features/Skills";
-import FutureSkills from "../App/features/FutureSkills";
+import { Container } from "../../common/Container/styled";
+import Footer from "../../features/personalHomepage/Footer";
+import Header from "../../common/Header";
+import Section from "../../common/Section";
+import About from "../../features/personalHomepage//About";
+import Portfolio from "../../features/personalHomepage/Portfolio";
+import Skills from "../../features/personalHomepage/Skills";
+import FutureSkills from "../../features/personalHomepage/FutureSkills";
 
-function App() {
+export const Homepage = () => {
   return (
     <Container>
       <Header content={<About />} />
@@ -19,4 +19,4 @@ function App() {
   );
 }
 
-export default App;
+export default Homepage;

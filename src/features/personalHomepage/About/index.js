@@ -8,7 +8,7 @@ import {
   Wrapper,
 } from "./styled";
 import { ReactComponent as Message } from "./message.svg";
-import { email } from "../../../features/email";
+import { email } from "../email";
 import {ThemeSwitcher} from "./ThemeSwitcher";
 
 const About = () => (

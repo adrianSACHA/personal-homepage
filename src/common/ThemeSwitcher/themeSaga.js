@@ -1,10 +1,11 @@
-import { takeEvery, put } from "redux-saga/effects";
+import { call, select, takeLatest } from "@redux-saga/core/effects";
 import { toggleTheme, selectIsDarkTheme } from "./themeSlice";
 
 function* changeThemeSaga() {
-  yield takeEvery(isDarkMode, function* ({ theme }) {
-    yield put({ type: isDarkMode, theme });
-  });
+  const isDarkTheme = yield select(selectIsDarkTheme);
+  yield call(changeThemeSaga, isDarkTheme);
 }
 
-export default changeThemeSaga;
+export function* themeSaga() {
+  yield takeLatest(toggleTheme.type, changeThemeSaga);
+}

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.section`
   background-color: ${({ theme }) => theme.color.sectionBackgroundColor};
-  max-width: 1216px;
+  max-width: ${({ theme }) => theme.breakpoint.desktop}px;
   min-height: 209px;
   box-shadow: 0px -2px 50px ${({ theme }) => theme.color.shadow},
     0px 16px 58px ${({ theme }) => theme.color.shadow};

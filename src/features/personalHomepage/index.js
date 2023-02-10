@@ -1,22 +1,23 @@
-import { Container } from "../../common/Container/styled";
-import Footer from "../../features/personalHomepage/Footer";
-import Header from "../../common/Header";
-import Section from "../../common/Section";
-import About from "../../features/personalHomepage//About";
-import Portfolio from "../../features/personalHomepage/Portfolio";
-import Skills from "../../features/personalHomepage/Skills";
-import FutureSkills from "../../features/personalHomepage/FutureSkills";
+import { Container } from "./Container/styled";
+import Footer from "./Footer";
+import Header from "./Header";
+import Section from "./Section";
+import About from "./About";
+import Portfolio from "./Portfolio";
+import Skills from "./Skills";
+import FutureSkills from "./FutureSkills";
+import { ThemeSwitcher } from "../../common/ThemeSwitcher";
 
 export const Homepage = () => {
   return (
     <Container>
-      <Header content={<About />} />
+      <Header title={<ThemeSwitcher />} content={<About />} />
       <Section title="My Skill set includes 🛠️" body={<Skills />} />
       <Section title="What I want to learn next 🚀" body={<FutureSkills />} />
       <Portfolio />
       <Footer />
     </Container>
   );
-}
+};
 
 export default Homepage;

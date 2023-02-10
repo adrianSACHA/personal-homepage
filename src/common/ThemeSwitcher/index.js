@@ -9,7 +9,7 @@ export const ThemeSwitcher = () => {
   return (
     <Wrapper>
       <SwitcherText>
-        Dark mode
+        Dark mode{" "}
         {isDarkTheme ? "On" : "Off"}
       </SwitcherText>
       <Switcher onClick={() => dispatch(toggleTheme())}>

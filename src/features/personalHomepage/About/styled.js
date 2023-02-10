@@ -1,12 +1,10 @@
-import myImage from "./myImage.jpeg";
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr 2fr;
   align-items: center;
   gap: 66px;
-  margin: 80px 0 0 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     grid-template-columns: auto;
@@ -16,9 +14,9 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const ImageOfMe = styled.div`
-  background-image: url(${myImage});
+export const ImageOfMe = styled.img`
   max-width: 390px;
+  height: auto;
   object-fit: fill;
   background-size: contain;
   border-radius: 50%;

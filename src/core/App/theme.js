@@ -1,7 +1,8 @@
 const breakpoint = {
   desktop: 1217,
-  tablet: 768,
-  mobile: 420,
+  tablet: 991,
+  mobileMax: 768,
+  mobileMin: 375,
 };
 
 export const lightTheme = {

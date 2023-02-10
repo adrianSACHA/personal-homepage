@@ -1,7 +1,9 @@
 import {
+  Item,
   Link,
   Memo,
   Social,
+  StyledLogo,
   StyledParagraph,
   Wrapper,
 } from "./styled";
@@ -11,8 +13,8 @@ import { socialsData } from "./Social/socialData";
 const Footer = () => (
   <Wrapper>
     <StyledParagraph>Let's talk!</StyledParagraph>
-    <Link href={`mailto:${email}`} title={email} rel="noopener noreferrer">
-      asachajdakiewicz@gmail.com
+    <Link href={`mailto:${email}`} title={email} rel="noreferrer">
+      {email}
     </Link>
     <Memo>
       I'm happy to help, always seeking for solutions. Open to new projects. If
@@ -20,11 +22,13 @@ const Footer = () => (
       make your ideas come to life, feel free to contact me.
     </Memo>
     <Social>
-     {/* {socialsData.map(({name, url, Icon}) => (
-
-     
-      <Icon />
-      ))} */}
+      {socialsData.map(({ name, url, Icon }) => (
+        <Item key={name}>
+          <StyledLogo href={url} title={name} target="_blank" rel="noreferrer">
+            <Icon />
+          </StyledLogo>
+        </Item>
+      ))}
     </Social>
   </Wrapper>
 );

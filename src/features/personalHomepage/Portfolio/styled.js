@@ -55,7 +55,7 @@ export const Repos = styled.div`
   gap: 32px;
   width: stretch;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     grid-template-columns: 1fr;
     gap: 16px;
   }

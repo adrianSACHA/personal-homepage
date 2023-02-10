@@ -21,6 +21,7 @@ export const TileRepo = styled.div`
   text-align: left;
   max-width: 100%;
   padding: 56px;
+  transition: border-color 0.3s;
   color: ${({ theme }) => theme.color.mainText};
 
   &:hover {
@@ -51,6 +52,7 @@ export const StyledParagraph = styled.p`
   font-size: 18px;
   line-height: 25px;
   color: ${({ theme }) => theme.color.secondText};
+  margin: 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     font-size: 14px;
@@ -71,7 +73,6 @@ export const List = styled.ul`
   flex-direction: column;
   align-items: center;
   padding-left: 0;
-
   color: ${({ theme }) => theme.color.secondText};
 `;
 
@@ -105,16 +106,19 @@ export const StyledName = styled.p`
 `;
 
 export const StyledLink = styled.a`
+  text-decoration: none;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
   align-items: center;
   cursor: pointer;
+  border-bottom: 2px solid #0366d6;
+  transition: all 0.3s;
   color: ${({ theme }) => theme.color.buttonBackground};
 
   &:hover {
-    text-decoration: underline;
+    border-bottom: 2px solid #2517eb;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-  max-width: 1216px;
+  max-width: ${({ theme }) => theme.breakpoint.desktop}px;
   margin: 0 auto;
 `;

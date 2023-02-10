@@ -9,7 +9,6 @@ import {
 } from "./styled";
 import { ReactComponent as Message } from "./message.svg";
 import { email } from "../email";
-import { ThemeSwitcher } from "../../../common/ThemeSwitcher";
 import myImage from "./myImage.jpeg";
 
 const About = () => (

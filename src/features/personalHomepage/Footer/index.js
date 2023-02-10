@@ -5,7 +5,7 @@ import {
   StyledParagraph,
   Wrapper,
 } from "./styled";
-import { email } from "../../../features/email";
+import { email } from "../email";
 import { socialsData } from "./Social/socialData";
 
 const Footer = () => (
@@ -20,11 +20,11 @@ const Footer = () => (
       make your ideas come to life, feel free to contact me.
     </Memo>
     <Social>
-     {socialsData.map(({name, url, Icon}) => (
+     {/* {socialsData.map(({name, url, Icon}) => (
 
      
       <Icon />
-      ))}
+      ))} */}
     </Social>
   </Wrapper>
 );

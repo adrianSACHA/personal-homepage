@@ -9,7 +9,7 @@ import {
 } from "./styled";
 import { ReactComponent as Message } from "./message.svg";
 import { email } from "../email";
-import {ThemeSwitcher} from "./ThemeSwitcher";
+import { ThemeSwitcher } from "../../../common/ThemeSwitcher";
 
 const About = () => (
   <Wrapper>
@@ -26,7 +26,11 @@ const About = () => (
         skills and creativity to create modern and aesthetic solutions for
         users.
       </Memo>
-      <StyledButton href={`mailto:${email}`} title="Hire me" rel="noopener noreferrer">
+      <StyledButton
+        href={`mailto:${email}`}
+        title="Hire me"
+        rel="noopener noreferrer"
+      >
         <Message /> Hire Me
       </StyledButton>
     </Content>

@@ -1,6 +1,6 @@
 import { skills } from "./skills.js";
 import { nanoid } from "@reduxjs/toolkit";
-import List from "../../../common/List/index.js";
+import List from "../List/index.js";
 
 const Skills = () => {
   const skillsWithIndex = skills.map((skill) => ({

@@ -4,24 +4,29 @@ export const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
-  gap: 66px;
+  grid-gap: 66px;
+  width: 100%;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
-    grid-template-columns: auto;
-    align-items: stretch;
-    gap: 6px;
     margin: 20px 0 0 0;
+    justify-content: stretch;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    grid-template-columns: auto;
+    /* align-items: stretch; */
+    grid-gap: 6px;
+    max-width: 100%;
   }
 `;
 
 export const ImageOfMe = styled.img`
-  max-width: 390px;
-  height: auto;
+  max-width: 100%;
   object-fit: fill;
   background-size: contain;
   border-radius: 50%;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     width: 132.67px;
     height: 132.67px;
   }

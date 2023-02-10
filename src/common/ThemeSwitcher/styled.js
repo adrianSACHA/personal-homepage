@@ -1,20 +1,18 @@
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components";
 import { ReactComponent as Sun } from "./icon.svg";
 
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   padding: 0px;
   gap: 12px;
-  right: 4%;
-  top: 10%;
-  position: absolute;
+  margin: 80px 0 40px 0;
+  width: 100%;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
-    right: 4%;
-    top: 4%;
+    margin: 24px 0 0px 0;
   }
 `;
 
@@ -26,7 +24,7 @@ export const SwitcherText = styled.p`
   text-transform: uppercase;
   color: ${({ theme }) => theme.color.secondText};
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     display: none;
   }
 `;
@@ -60,7 +58,7 @@ export const Icon = styled.p`
     moveToRight &&
     css`
       transform: translateX(22px);
-  `}
+    `}
 `;
 
 export const Sunny = styled(Sun)`

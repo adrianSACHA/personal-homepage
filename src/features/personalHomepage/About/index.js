@@ -10,11 +10,11 @@ import {
 import { ReactComponent as Message } from "./message.svg";
 import { email } from "../email";
 import { ThemeSwitcher } from "../../../common/ThemeSwitcher";
+import myImage from "./myImage.jpeg";
 
 const About = () => (
   <Wrapper>
-    <ImageOfMe />
-    <ThemeSwitcher />
+    <ImageOfMe src={myImage} alt="Adrian Sachajdakiewicz" />
     <Content>
       <StyledParagraph>This is</StyledParagraph>
       <HeaderMemo>Adrian Sachajdakiewicz</HeaderMemo>

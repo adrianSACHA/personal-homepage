@@ -24,13 +24,13 @@ const Tile = ({ projects }) => (
             <List>
               <ListItem>
                 <StyledName>Demo:</StyledName>
-                <StyledLink target="_blank" href={project.homepage}>
+                <StyledLink target="_blank" rel="norereffer" href={project.homepage}>
                   {project.homepage}
                 </StyledLink>
               </ListItem>
               <ListItem>
                 <StyledName>Code:</StyledName>
-                <StyledLink target="_blank" href={project.html_url}>
+                <StyledLink target="_blank" rel="norereffer" href={project.html_url}>
                   {project.html_url}
                 </StyledLink>
               </ListItem>

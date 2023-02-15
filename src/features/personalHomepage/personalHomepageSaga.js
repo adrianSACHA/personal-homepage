@@ -1,4 +1,4 @@
-import { getProjects } from "./Portfolio/api";
+import { getProjects } from "./personalHomepageAPI";
 import { takeLatest, call, put, delay } from "@redux-saga/core/effects";
 import {
   fetchRepos,

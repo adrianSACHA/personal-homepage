@@ -13,7 +13,7 @@ export const Header = styled.h1`
   line-height: 29px;
 `;
 
-export const Memo = styled.p`
+export const Memo = styled.span`
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;

@@ -3,7 +3,7 @@ import {
   HeaderMemo,
   ImageOfMe,
   Memo,
-  StyledParagraph,
+  LetsTalk,
   Wrapper,
 } from "./styled";
 import { ReactComponent as Message } from "./images/message.svg";
@@ -15,7 +15,7 @@ const About = () => (
   <Wrapper>
     <ImageOfMe src={myImage} alt="Adrian Sachajdakiewicz" />
     <Content>
-      <StyledParagraph>This is</StyledParagraph>
+      <LetsTalk>This is</LetsTalk>
       <HeaderMemo>Adrian Sachajdakiewicz</HeaderMemo>
       <Memo>
         I am searching for a job as a junior front-end developer, where I will

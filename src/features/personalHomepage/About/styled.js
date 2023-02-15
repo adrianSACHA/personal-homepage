@@ -40,25 +40,18 @@ export const Content = styled.div`
     min-height: 96px;
     font-weight: 400;
     font-size: 17px;
-    line-height: 140%;
+    line-height: 1.4;
     margin: 0 0 0 6px;
   }
 `;
 
-export const StyledParagraph = styled.p`
-  max-width: 176px;
-  min-height: 16px;
+export const LetsTalk = styled.h2`
   font-weight: 700;
   font-size: 12px;
-  line-height: 130%;
+  letter-spacing: initial;
   text-transform: uppercase;
   color: ${({ theme }) => theme.color.secondText};
-  margin: 6px 0;
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
-    width: 100%;
-    height: 16px;
-  }
+  margin: 0;
 `;
 
 export const HeaderMemo = styled.p`
@@ -73,23 +66,23 @@ export const HeaderMemo = styled.p`
     max-width: 340px;
     min-height: 27px;
     font-size: 22px;
-    line-height: 27px;
+    line-height: 1.4;
   }
 `;
 
 export const Memo = styled.p`
-  max-width: 633px;
+  max-width: 670px;
   min-height: 57px;
   font-weight: 400;
   font-size: 20px;
-  line-height: 140%;
+  line-height: 1.4;
   color: ${({ theme }) => theme.color.secondText};
   margin: 29px 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     max-width: 100%;
     min-height: 96px;
-    font-size: 17px;
+    font-size: 14px;
     margin: 16px 0 24px 0;
   }
 `;

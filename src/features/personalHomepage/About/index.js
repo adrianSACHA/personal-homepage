@@ -3,13 +3,13 @@ import {
   HeaderMemo,
   ImageOfMe,
   Memo,
-  StyledButton,
   StyledParagraph,
   Wrapper,
 } from "./styled";
 import { ReactComponent as Message } from "./message.svg";
 import { email } from "../email";
 import myImage from "./myImage.jpeg";
+import { StyledButton } from "../ButtonLink";
 
 const About = () => (
   <Wrapper>
@@ -25,12 +25,8 @@ const About = () => (
         skills and creativity to create modern and aesthetic solutions for
         users.
       </Memo>
-      <StyledButton
-        href={`mailto:${email}`}
-        title="Hire me"
-        rel="noopener noreferrer"
-      >
-        <Message /> Hire Me
+      <StyledButton href={`mailto:${email}`} title="Hire me" rel="noreferrer">
+        <Message /> Hire&nbsp;Me
       </StyledButton>
     </Content>
   </Wrapper>

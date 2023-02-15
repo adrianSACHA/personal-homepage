@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Wrapper = styled.footer`
   max-width: 691px;
-  min-height: 282px;
   margin: 10px;
 `;
 

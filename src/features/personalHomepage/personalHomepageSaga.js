@@ -6,9 +6,11 @@ import {
   fetchReposError,
 } from "./personalHomepageSlice";
 
+const loadingDelay = 2_000
+
 function* fetchReposHandler() {
   try {
-    yield delay(2000);
+    yield delay(loadingDelay); // just to demo the loading
     const data = yield call(getProjects);
     yield put(fetchReposSuccess(data));
   } catch (error) {

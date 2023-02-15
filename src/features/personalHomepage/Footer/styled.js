@@ -52,15 +52,17 @@ export const Social = styled.ul`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   gap: 24px;
-  max-width: 264px;
   min-height: 48px;
   margin: 50px 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+    gap: 12px;
+  }
 `;
 
 export const Item = styled.li`
-  gap: 24px;
   list-style: none;
 `;
 

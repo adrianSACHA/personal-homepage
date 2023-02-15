@@ -18,12 +18,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 N/A
 
 ## Description
-Building site according to a project in Figma.
-
-To do:
-- theme switcher for dark mode
-- ~~getting repos~~
-- ~~loading circle~~
+Personal Homepage by Adrian Sachajdakiewicz, about my skills that I already know and future skills yet to learn.
+Site build according to a project in Figma.
 
 ## Technologies used in project
 - `HTML`

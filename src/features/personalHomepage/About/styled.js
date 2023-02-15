@@ -14,7 +14,6 @@ export const Wrapper = styled.div`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     grid-template-columns: auto;
-    /* align-items: stretch; */
     grid-gap: 6px;
     max-width: 100%;
   }

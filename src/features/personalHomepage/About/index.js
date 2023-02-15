@@ -6,9 +6,9 @@ import {
   StyledParagraph,
   Wrapper,
 } from "./styled";
-import { ReactComponent as Message } from "./message.svg";
+import { ReactComponent as Message } from "./images/message.svg";
 import { email } from "../email";
-import myImage from "./myImage.jpeg";
+import myImage from "./images/myImage.jpeg";
 import { StyledButton } from "../ButtonLink";
 
 const About = () => (

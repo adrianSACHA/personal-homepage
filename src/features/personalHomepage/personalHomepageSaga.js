@@ -1,6 +1,10 @@
-import { getProjects } from "./api";
+import { getProjects } from "./Portfolio/api";
 import { takeLatest, call, put, delay } from "@redux-saga/core/effects";
-import { fetchRepos, fetchReposSuccess, fetchReposError } from "./reposSlice";
+import {
+  fetchRepos,
+  fetchReposSuccess,
+  fetchReposError,
+} from "./personalHomepageSlice";
 
 function* fetchReposHandler() {
   try {

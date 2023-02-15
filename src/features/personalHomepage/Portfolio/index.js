@@ -9,7 +9,11 @@ import {
 import Tile from "./Tile";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchRepos, selectRepos, selectReposStatus } from "./reposSlice";
+import {
+  fetchRepos,
+  selectRepos,
+  selectReposStatus,
+} from "../personalHomepageSlice";
 import { Error } from "./Info/Error";
 import { Loading } from "./Info/Loading";
 

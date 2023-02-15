@@ -1,6 +1,6 @@
-import { styleIcon } from "../styled";
-import { ReactComponent as GitHub } from "./GitHub.svg";
-import { ReactComponent as LinkedIn } from "./LinkedIn.svg";
+import { styleIcon } from "./styled";
+import { ReactComponent as GitHub } from "./icons/GitHub.svg";
+import { ReactComponent as LinkedIn } from "./icons/LinkedIn.svg";
 
 export const socialsData = [
   {

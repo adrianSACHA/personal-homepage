@@ -8,7 +8,7 @@ import {
   Wrapper,
 } from "./styled";
 import { email } from "../email";
-import { socialsData } from "./Social/socialData";
+import { socialsData } from "./socialData";
 
 const Footer = () => (
   <Wrapper>

@@ -1,4 +1,4 @@
-import { StyledButton } from "../../../About/styled";
+import { StyledButton } from "../../../ButtonLink";
 import { ReactComponent as Danger } from "./Danger.svg";
 import { Header, Memo, Wrapper } from "./styled";
 
@@ -11,6 +11,13 @@ export const Error = () => (
       <br />
       You can check them directly on Github.
     </Memo>
-    <StyledButton>Go{" "}to{" "}Github</StyledButton>
+    <StyledButton
+      href={"https://github.com/adrianSacha"}
+      title="github.com/adrianSacha"
+      target={"_blank"}
+      rel="noreferrer"
+    >
+      Go&nbsp;to&nbsp;Github
+    </StyledButton>
   </Wrapper>
 );

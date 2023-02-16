@@ -33,6 +33,6 @@ export const StyledButtonLink = styled.a`
     gap: 12px;
     background: ${({ theme }) => theme.color.buttonBackground};
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.4;
   }
 `;

@@ -1,19 +1,19 @@
 import {
   Content,
   HeaderMemo,
-  ImageOfMe,
+  ImageOfMe as Avatar,
   Memo,
   LetsTalk,
   Wrapper,
 } from "./styled";
-import { ReactComponent as Message } from "./images/message.svg";
+import { ReactComponent as ButtonMessage } from "./images/message.svg";
 import { email } from "../email";
-import myImage from "./images/myImage.jpeg";
-import { StyledButton } from "../ButtonLink";
+import AdrianSachajdakiewiczProfile from "./images/profile.jpeg";
+import { StyledButtonLink } from "../ButtonLink";
 
-const About = () => (
+const MainInformation = () => (
   <Wrapper>
-    <ImageOfMe src={myImage} alt="Adrian Sachajdakiewicz" />
+    <Avatar src={AdrianSachajdakiewiczProfile} alt="Adrian Sachajdakiewicz" />
     <Content>
       <LetsTalk>This is</LetsTalk>
       <HeaderMemo>Adrian Sachajdakiewicz</HeaderMemo>
@@ -25,10 +25,14 @@ const About = () => (
         skills and creativity to create modern and aesthetic solutions for
         users.
       </Memo>
-      <StyledButton href={`mailto:${email}`} title="Hire me" rel="noreferrer">
-        <Message /> Hire&nbsp;Me
-      </StyledButton>
+      <StyledButtonLink
+        href={`mailto:${email}`}
+        title="Hire me"
+        rel="noreferrer"
+      >
+        <ButtonMessage /> Hire&nbsp;Me
+      </StyledButtonLink>
     </Content>
   </Wrapper>
 );
-export default About;
+export default MainInformation;

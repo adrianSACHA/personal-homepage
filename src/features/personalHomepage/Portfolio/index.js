@@ -13,7 +13,7 @@ import {
   fetchRepos,
   selectRepos,
   selectReposStatus,
-} from "../personalHomepageSlice";
+} from "../../personalHomepageSlice";
 import { Error } from "./Info/Error";
 import { Loading } from "./Info/Loading";
 
@@ -35,7 +35,7 @@ const Portfolio = () => {
     <Wrapper>
       <StyledLogo
         target="_blank"
-        rel="noopener noreferrer"
+        rel="noreferrer"
         href="https://github.com/adrianSACHA"
       >
         <GitHubLogo />

@@ -4,3 +4,4 @@ export const futureSkills = [
   { content: "Node.js" },
   { content: "Unit testing" },
 ];
+

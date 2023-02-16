@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const StyledUlist = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-  padding: 0px;
+  grid-gap: 8px;
+  padding: 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     grid-template-columns: repeat(2, 1fr);

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as Logo } from "./GitHub.svg";
+import { ReactComponent as Logo } from "./github.svg";
 
 export const Wrapper = styled.section`
   display: flex;

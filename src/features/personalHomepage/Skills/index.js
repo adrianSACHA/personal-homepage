@@ -1,14 +1,11 @@
-import { skills } from "./skills.js";
-import { nanoid } from "@reduxjs/toolkit";
-import List from "../List/index.js";
+import { StyledList, StyledUlist } from "./styled";
 
-const Skills = () => {
-  const skillsWithIndex = skills.map((skill) => ({
-    ...skill,
-    id: nanoid(),
-  }));
-
-  return <List listContent={skillsWithIndex} />;
-};
+const Skills = ({ skills }) => (
+  <StyledUlist>
+    {skills.map(({ id, content }) => (
+      <StyledList key={id}>{content}</StyledList>
+    ))}
+  </StyledUlist>
+);
 
 export default Skills;

@@ -27,7 +27,7 @@ const MainInformation = () => (
       </Memo>
       <StyledButtonLink
         href={`mailto:${email}`}
-        title="Hire me"
+        title={email}
         rel="noreferrer"
       >
         <ButtonMessage /> Hire&nbsp;Me

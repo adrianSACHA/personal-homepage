@@ -12,7 +12,7 @@ export const Memo = styled.p`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.2;
   }
 `;
 
@@ -27,7 +27,7 @@ export const StyledParagraph = styled.p`
 export const Link = styled.a`
   font-weight: 900;
   font-size: 32px;
-  line-height: 39px;
+  line-height: 1.2;
   cursor: pointer;
   text-decoration: none;
   transition: color 0.3s;

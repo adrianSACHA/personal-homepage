@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.header`
+  margin-top: -30px; // that's height of the theme switch
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
@@ -8,7 +9,6 @@ export const Wrapper = styled.header`
   width: 100%;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
-    margin: 20px 0 0 0;
     justify-content: stretch;
   }
 
@@ -27,7 +27,6 @@ export const ImageOfMe = styled.img`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     width: 132.67px;
-    height: 132.67px;
   }
 `;
 
@@ -45,8 +44,8 @@ export const Content = styled.div`
   }
 `;
 
-export const LetsTalk = styled.h2`
-  font-weight: 700;
+export const ThisIs = styled.div`
+  font-weight: bold;
   font-size: 12px;
   letter-spacing: initial;
   text-transform: uppercase;
@@ -54,25 +53,21 @@ export const LetsTalk = styled.h2`
   margin: 0;
 `;
 
-export const HeaderMemo = styled.p`
+export const HeaderMemo = styled.h1`
   max-width: 415px;
-  min-height: 46px;
   font-weight: 900;
   font-size: 38px;
-  line-height: 46px;
-  margin: 6px 0;
+  margin: 12px 0 0 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     max-width: 340px;
-    min-height: 27px;
     font-size: 22px;
-    line-height: 1.4;
+    margin-top: 8px;
   }
 `;
 
 export const Memo = styled.p`
-  max-width: 670px;
-  min-height: 57px;
+  max-width: 650px;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.4;
@@ -80,8 +75,7 @@ export const Memo = styled.p`
   margin: 29px 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
-    max-width: 100%;
-    min-height: 96px;
+    max-width: 570px;
     font-size: 14px;
     margin: 16px 0 24px 0;
   }

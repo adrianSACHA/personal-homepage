@@ -3,7 +3,7 @@ import {
   HeaderMemo,
   ImageOfMe as Avatar,
   Memo,
-  LetsTalk,
+  ThisIs,
   Wrapper,
 } from "./styled";
 import { ReactComponent as ButtonMessage } from "./images/message.svg";
@@ -15,7 +15,7 @@ const MainInformation = () => (
   <Wrapper>
     <Avatar src={AdrianSachajdakiewiczProfile} alt="Adrian Sachajdakiewicz" />
     <Content>
-      <LetsTalk>This is</LetsTalk>
+      <ThisIs>This is</ThisIs>
       <HeaderMemo>Adrian Sachajdakiewicz</HeaderMemo>
       <Memo>
         I am searching for a job as a junior front-end developer, where I will
@@ -25,11 +25,7 @@ const MainInformation = () => (
         skills and creativity to create modern and aesthetic solutions for
         users.
       </Memo>
-      <StyledButtonLink
-        href={`mailto:${email}`}
-        title={email}
-        rel="noreferrer"
-      >
+      <StyledButtonLink href={`mailto:${email}`} title={email} rel="noreferrer">
         <ButtonMessage /> Hire&nbsp;Me
       </StyledButtonLink>
     </Content>

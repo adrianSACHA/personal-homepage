@@ -1,11 +1,8 @@
-export const getProjects = async () => {
-  const response = await fetch(
-    "https://api.github.com/users/adriansacha/repos"
-  );
+import axios from "axios";
 
-  if (!response.ok) {
-    new Error(response.statusText);
-  }
+const githubAPIBaseURL = "https://api.github.com";
 
-  return await response.json();
-};
+export const getRepositories = (username) =>
+  axios
+    .get(`${githubAPIBaseURL}/users/${username}/repos`)
+    .then((response) => response.data);

@@ -1,4 +1,8 @@
-# Personal Homepage RESUME :)
+# Personal Homepage RESUME
+
+## Under Construction(TO DO):
+- localStorage
+- Repos loading
 
 ![Application Image](public/personalHomepage.png)
 

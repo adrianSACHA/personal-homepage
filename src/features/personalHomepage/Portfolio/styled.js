@@ -32,7 +32,7 @@ export const StyledHeader = styled.h2`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.2;
     text-align: center;
   }
 `;
@@ -40,23 +40,10 @@ export const StyledHeader = styled.h2`
 export const StyledParagraph = styled.p`
   font-weight: 400;
   font-size: 20px;
-  line-height: 140%;
+  line-height: 1.4;
   margin: 0 0 24px 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     font-size: 17px;
-    line-height: 140%;
-  }
-`;
-
-export const Repos = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
-  width: stretch;
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-    grid-template-columns: 1fr;
-    gap: 16px;
   }
 `;

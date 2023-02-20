@@ -2,13 +2,23 @@ import styled, { keyframes } from "styled-components";
 import { ReactComponent as Circle } from "./elipse.svg";
 
 export const Wrapper = styled.div`
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 140%;
+  margin-top: 88px;
+  display: grid;
+  grid-gap: 48px;
   transition: 1s;
   text-align: center;
-  letter-spacing: 0.05em;
   color: ${({ theme }) => theme.color.black};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    grid-gap: 20px;
+    margin-top: 32px;
+  }
+`;
+
+export const Memo = styled.span`
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     font-size: 17px;
@@ -29,6 +39,13 @@ export const Icon = styled.p`
 `;
 
 export const Elipse = styled(Circle)`
-  width: 160px;
-  height: 160px;
+  height: auto;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+    width: 120px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    width: 60px;
+  }
 `;

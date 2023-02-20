@@ -1,4 +1,4 @@
-import { getProjects } from "./personalHomepageAPI";
+import { getRepositories } from "./personalHomepageAPI";
 import { takeLatest, call, put, delay } from "@redux-saga/core/effects";
 import {
   fetchRepos,
@@ -6,17 +6,17 @@ import {
   fetchReposError,
 } from "./personalHomepageSlice";
 
-const loadingDelay = 2_000
+const loadingDelay = 2_000;
 
-function* fetchReposHandler() {
+function* fetchReposHandler({ payload: username }) {
   try {
     yield delay(loadingDelay); // just to demo the loading
-    const data = yield call(getProjects);
+    const data = yield call(getRepositories, username);
     yield put(fetchReposSuccess(data));
   } catch (error) {
     yield put(fetchReposError());
   }
 }
 export function* reposSaga() {
-  yield takeLatest(fetchRepos, fetchReposHandler);
+  yield takeLatest(fetchRepos.type, fetchReposHandler);
 }

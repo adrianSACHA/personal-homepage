@@ -15,7 +15,7 @@ export const Error = () => (
     <StyledButtonLink
       href={`https://github.com/${githubUsername}`}
       title={`github.com/${githubUsername}`}
-      target={"_blank"}
+      target="_blank"
       rel="noreferrer"
     >
       Go&nbsp;to&nbsp;Github

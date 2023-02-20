@@ -3,7 +3,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Section from "./Section";
 import MainInformation from "./MainInformation";
-import Portfolio from "./Portfolio";
+import { Portfolio } from "./Portfolio";
 import Skills from "./Skills";
 import { ThemeSwitcher } from "../../common/ThemeSwitcher";
 import { skills, futureSkills } from "./skillsData";

@@ -1,11 +1,11 @@
-import { Elipse, Icon, Wrapper } from "./styled";
+import { Elipse, Icon, Memo, Wrapper } from "./styled";
 
 export const Loading = () => (
   <Wrapper>
+    <Memo>Please wait, projects are being loaded...</Memo>
     <Icon>
       {" "}
       <Elipse />
     </Icon>
-    <p>Please wait, projects are being loaded...</p>
   </Wrapper>
 );

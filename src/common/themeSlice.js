@@ -4,7 +4,7 @@ import { getDarkThemeFromLocalStorage } from "./darkThemInLocalStorage";
 const themeSlice = createSlice({
   name: "theme",
   initialState: {
-    isDarkTheme: getDarkThemeFromLocalStorage,
+    isDarkTheme: getDarkThemeFromLocalStorage(),
   },
   reducers: {
     toggleTheme: (state) => {

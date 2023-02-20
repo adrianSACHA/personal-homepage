@@ -1,6 +1,6 @@
 # Personal Homepage RESUME
 
-![Application Image](public/personalHomepage.png)
+![Application Image](public/share.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

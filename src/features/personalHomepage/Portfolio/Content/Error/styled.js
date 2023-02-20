@@ -5,16 +5,30 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 32px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+    gap: 16px;
+  }
 `;
 
-export const Header = styled.h1`
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
+export const Header = styled.h3`
+  font-weight: 900;
+  font-size: 30px;
+  margin: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+    font-size: 18px;
+    line-height: 1.2;
+  }
 `;
 
 export const Memo = styled.span`
   font-weight: 400;
   font-size: 20px;
-  line-height: 140%;
+  line-height: 1.4;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+    font-size: 17px;
+  }
 `;

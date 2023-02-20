@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import α from "color-alpha";
 
 export const List = styled.ul`
   min-height: 322px;
@@ -9,7 +10,7 @@ export const List = styled.ul`
   list-style: none;
   padding: 0;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     grid-template-columns: 1fr;
     grid-gap: 24px;
   }
@@ -38,99 +39,86 @@ export const ListItem = styled.li`
   }
 `;
 
-export const StyledHeader = styled.h2`
+export const Name = styled.h3`
   font-weight: 700;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 1.2;
   color: ${({ theme }) => theme.color.buttonBackground};
   margin: 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     grid-template-columns: auto;
+    font-size: 16px;
   }
 `;
 
-export const StyledParagraph = styled.p`
+export const Description = styled.p`
   font-weight: 400;
   font-size: 18px;
-  line-height: 25px;
+  margin-top: 24px;
+  line-height: 1.4;
   color: ${({ theme }) => theme.color.secondText};
-  margin: 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     font-size: 14px;
-    line-height: 17px;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.05em;
+    line-height: 1.2;
+    margin-top: 16px;
   }
 `;
 
-// export const List = styled.ul`
-//   list-style: none;
-//   font-weight: 400;
-//   font-size: 18px;
-//   line-height: 25px;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   padding-left: 0;
-//   color: ${({ theme }) => theme.color.secondText};
-// `;
-
-// export const ListItem = styled.li`
-//   display: flex;
-//   gap: 8px;
-//   flex-direction: row;
-//   width: 100%;
-//   flex: 1;
-//   align-items: center;
-// `;
-
 export const StyledName = styled.p`
-  width: 120px;
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 140%;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.05em;
+  line-height: 1.4;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     width: 100px;
     font-weight: 400;
     font-size: 14px;
-    line-height: 17px;
-    display: flex;
-    align-items: center;
+    line-height: 1.2;
   }
 `;
 
-export const StyledLink = styled.a`
+export const Links = styled.dl`
+  margin-top: 24px;
+  margin-bottom: 0;
+  display: grid;
+  grid-gap: 8px;
+  line-height: 1.6;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 14px;
+    margin-top: 16px;
+  }
+`;
+
+export const LinksRow = styled.div`
+  display: grid;
+  grid-template-columns: 4em 1fr;
+`;
+
+export const LinksValue = styled.dd`
+  margin: 0;
+`;
+
+export const Link = styled.a`
   text-decoration: none;
   font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 25px;
   align-items: center;
   cursor: pointer;
-  border-bottom: 2px solid #0366d6;
+  padding-bottom: 1px;
+  border-bottom: 1px solid ${({ theme }) => α(theme.color.mainText, 0.3)};
   transition: all 0.3s;
   color: ${({ theme }) => theme.color.buttonBackground};
 
   &:hover {
-    border-bottom: 2px solid #2517eb;
+    border-color: unset;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
-    line-height: 17px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.05em;
+    line-height: 1.2;
   }
 `;

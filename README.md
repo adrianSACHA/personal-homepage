@@ -1,9 +1,5 @@
 # Personal Homepage RESUME
 
-## Under Construction(TO DO):
-- localStorage
-- Repos loading
-
 ![Application Image](public/personalHomepage.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -19,7 +15,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 [Application Demo](https://adriansacha.github.io/personal-homepage/)
 
 ## PREVIEW
-N/A
+![Application Preview](public/PersonalHomepagePreview.gif)
 
 ## Description
 Personal Homepage by Adrian Sachajdakiewicz, about my skills that I already know and future skills yet to learn.

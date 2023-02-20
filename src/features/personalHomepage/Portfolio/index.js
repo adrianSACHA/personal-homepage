@@ -5,7 +5,6 @@ import {
   StyledParagraph,
   Wrapper,
 } from "./styled";
-import Repositories from "./Content/Repositories";
 import { useEffect } from "react";
 import { githubUsername } from "./githubUsername";
 import { useDispatch, useSelector } from "react-redux";
@@ -14,8 +13,9 @@ import {
   selectRepos,
   selectReposStatus,
 } from "../../personalHomepageSlice";
+import { Content } from "../Portfolio/Content";
 
-const Portfolio = () => {
+export const Portfolio = () => {
   const dispatch = useDispatch();
 
   const repositories = useSelector(selectRepos);
@@ -36,9 +36,7 @@ const Portfolio = () => {
       </StyledLogo>
       <StyledHeader>Portfolio</StyledHeader>
       <StyledParagraph>My recent projects</StyledParagraph>
-      <div>
-        <Repositories status={reposStatus} repositories={repositories} />
-      </div>
+      <Content status={reposStatus} repositories={repositories} />
     </Wrapper>
   );
 };

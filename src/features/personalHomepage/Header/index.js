@@ -1,9 +1,11 @@
 import { StyledHeader } from "./styled";
+import { ThemeSwitcher } from "../../../common/ThemeSwitcher";
+import MainInformation from "../MainInformation";
 
-const Header = ({ title, content }) => (
+const Header = () => (
   <StyledHeader>
-    {title}
-    {content}
+    <ThemeSwitcher />
+    <MainInformation />
   </StyledHeader>
 );
 

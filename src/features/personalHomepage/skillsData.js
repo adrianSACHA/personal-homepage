@@ -24,7 +24,6 @@ export const skills = [
   { content: "Git" },
 ];
 export const futureSkills = [
-  { content: "Angular" },
   { content: "TypeScript" },
   { content: "React context" },
   { content: "Node.js" },
